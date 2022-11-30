@@ -1,0 +1,21 @@
+.cursor{
+    cursor: pointer;
+    color: rgb(249, 247, 247)
+}
+
+.text-decorator-none{
+    text-decoration: none;
+}
+
+.fundo{
+    background: yellow !important;
+    opacity: 3;
+}
+
+.fundoletras{
+    opacity: 50;
+}
+
+
+
+
