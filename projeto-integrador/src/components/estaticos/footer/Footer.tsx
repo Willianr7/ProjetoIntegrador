@@ -33,7 +33,7 @@ function Footer() {
                         </Box>
                         <Box>
                             <a target="_blank" href="">
-                                <Typography variant="subtitle2" gutterBottom style={{ color: "yellow" }} align="center">Projeto MEUI: Erradicação contra a fome</Typography>
+                                <Typography variant="subtitle2" gutterBottom style={{ color: "yellow" }} align="center">Projeto MEUI: Erradicação contra a Pobreza.</Typography>
                             </a>
                         </Box>
                     </Box>

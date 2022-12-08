@@ -6,11 +6,13 @@ import './Nossamissao.css';
 function Nossamissao() {
   return (
      <>
-     <Grid container justifyContent='center' alignItems='center'>
-        
-     <Typography variant="h3" component='h1' align='center'>Somos uma associação dirigida para o conhecimento sobre os benefícios de ONG's, que beneficiam as pessoas com baixa renda.</Typography>
+     <Grid container justifyContent='center' alignItems='center' className='h2'>
+       
+     <Typography variant="h2" component='h2' align='center' > Esta é nossa missão: mostrar que
+      é possível e urgente mudar a vida das pessoas. Somos uma Associação dirigida para o conhecimento sobre 
+      os benefícios de ONG's que beneficiam as pessoas com baixa renda no acompanhamento e gestão de programas e
+       projetos sociais.</Typography>
 
-        
 
      </Grid>
      

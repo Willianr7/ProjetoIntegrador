@@ -6,6 +6,8 @@ import Footer from './components/estaticos/footer/Footer';
 import Home from './components/estaticos/home/Home';
 import Nossamissao from './components/estaticos/nossamissao/Nossamissao';
 import Sobrenos from './components/estaticos/sobrenos/Sobrenos';
+import Login from './paginas/login/Login';
+import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
       <Route path='/' element={<Home />}/>
       <Route path='/nossamissao' element={<Nossamissao />}/>
       <Route path='/sobrenos' element={<Sobrenos />}/>
+      <Route path='/login' element={<Login />}/>
+      <Route path='/cadastro' element={<CadastroUsuario />}/>
 
       </Routes>
     <Footer />
