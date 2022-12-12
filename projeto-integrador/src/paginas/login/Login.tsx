@@ -55,21 +55,21 @@ function Login(){
           <Grid alignItems='center' xs={6}>
             <Box padding={20}>
                 <form onSubmit={onSubmit}>
-                    <Typography>Entrar</Typography>
-                    <TextField id='usuario' value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updateModel(e)} label='usuario' variant='outlined' name='usuario' margin='normal' fullWidth />
-                    <TextField id='senha' value={userLogin.senha}  onChange={(e: ChangeEvent<HTMLInputElement>) => updateModel(e)} label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
+                    <Typography><h1>Entre Agora</h1></Typography>
+                    <TextField id='usuario' value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updateModel(e)} label='Insira o nome do seu usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
+                    <TextField id='senha' value={userLogin.senha}  onChange={(e: ChangeEvent<HTMLInputElement>) => updateModel(e)} label='Digite a sua senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
                 <Box marginTop={2} textAlign= 'center'>
                <Button type='submit' variant='contained' color='primary'>
-                Logar
+                SUBMETER
                </Button>
                 </Box>
                 </form>
                 <Box display='flex' justifyContent='center' marginTop={2}>
                     <Box marginRight={1}>
-                        <Typography variant='subtitle1' gutterBottom align='center'>Não tem conta</Typography>
+                        <Typography variant='subtitle1' gutterBottom align='center'>Ainda não tem uma conta?</Typography>
                     </Box>
                     <Link to='/cadastro'>
-                    <Typography variant='subtitle1' gutterBottom align='center' style={{fontWeight: 'bold'}}>cadastre-se</Typography>
+                    <Typography variant='subtitle1' gutterBottom align='center' style={{fontWeight: 'bold'}}>Cadastre-se!</Typography>
                 </Link>
                 </Box>
             </Box>

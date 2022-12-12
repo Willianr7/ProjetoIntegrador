@@ -8,7 +8,7 @@
 }
 
 .fundo{
-    background: #020309 !important;
+    background: hsl(180, 100%, 100%) !important;
     opacity: 2;
 }
 
@@ -20,14 +20,14 @@
     font-style: oblique;
 }
 .imglogo{
- width: 170px;
+ width: 200px;
  
 }
 .imglink{
     width: 60px;
     margin-left: 5px;
 }
-.imgsobre{
+.SOBRE_NOS{
 width: 150px;
 height: 80px;
 }
@@ -49,3 +49,12 @@ height: 80px;
     width: 80px;
 }
 
+.NOSSA_MISSAO{
+width: 150px;
+height: 80px;
+}
+
+.HOME{
+width: 80px;
+height: 80px;
+}

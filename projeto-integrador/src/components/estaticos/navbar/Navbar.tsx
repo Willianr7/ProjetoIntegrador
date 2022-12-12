@@ -4,10 +4,10 @@ import { Box } from '@mui/material';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 import meui from '../../estaticos/image/meui.png';
-import paginap from '../../estaticos/image/pagina_principal.png';
-import sobre from '../../estaticos/image/sobre-nós.png';
-import misao from '../../estaticos/image/missao.png';
+import NOSSA_MISSAO from '../../estaticos/image/NOSSA_MISSAO.png';
 import login from '../../estaticos/image/login.png';
+import SOBRE_NOS from '../../estaticos/image/SOBRE_NOS.png';
+import HOME from '../../estaticos/image/HOME.png';
 
 function Navbar() {
     return (
@@ -20,31 +20,26 @@ function Navbar() {
                         </Typography>
                     </Box>
 
-                    <Box display="flex" justifyContent="start" className='margim'>
-                        <Box mx={7} className='cursor margim'>
+                    <Box display="flex" justifyContent="start" className='margim HOME'>
+                        <Box mx={7} className='HOME'>
                             <Link to='/' className='text-decorator-none'>
                             <Typography variant="h5"  >
-                                <img src={paginap} className='imglink'></img>
+                                <img src={HOME} className='HOME'></img>
                             </Typography>
-                            <Box className='proximo fundoletras'>
-                            <Typography variant="h5" >
-                                HOME
-                            </Typography>
-                            </Box>
                             </Link>
 
                         </Box>
                         <Box mx={7} className='cursor margim2' >
                             <Link to='/sobrenos' className='text-decorator-none '>
                             <Typography variant="h5"  >
-                                <img src={sobre} className='imgsobre'></img>
+                                <img src={SOBRE_NOS} className='SOBRE_NOS'></img>
                             </Typography>
                             </Link>
                         </Box>
                         <Box mx={7} className='cursor margim2'>
                             <Link to='/nossamissao' className='text-decorator-none '>
                             <Typography variant="h5"  >
-                                <img src={misao} className='imgsobre'></img>
+                                <img src={NOSSA_MISSAO} className='NOSSA_MISSAO'></img>
                             </Typography>
                             </Link>
                         </Box>
