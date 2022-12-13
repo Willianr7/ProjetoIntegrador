@@ -1,61 +1,82 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography } from '@material-ui/core';
-import { Box } from '@mui/material';
-import './Navbar.css';
+import { AppBar, Toolbar, Typography} from '@material-ui/core';
+import {Box} from '@mui/material';
 import { Link } from 'react-router-dom';
+import {useNavigate } from 'react-router-dom'
+import './Navbar.css'
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
+import { useDispatch } from "react-redux";
+import { addToken } from '../../../store/tokens/actions';
+import {toast} from 'react-toastify';
 import meui from '../../estaticos/image/meui.png';
-import NOSSA_MISSAO from '../../estaticos/image/NOSSA_MISSAO.png';
-import login from '../../estaticos/image/login.png';
-import SOBRE_NOS from '../../estaticos/image/SOBRE_NOS.png';
 import HOME from '../../estaticos/image/HOME.png';
+import SOBRE_NOS from '../../estaticos/image/SOBRE_NOS.png';
 
 function Navbar() {
-    return (
-        <>
-            <AppBar position="static" className='fundo'>
-                <Toolbar variant="dense">
-                    <Box className='comenzo'>
-                        <Typography >
-                        <img src={meui} className='imglogo'></img>
+    const token = useSelector<TokenState, TokenState["tokens"]>(
+        (state) => state.tokens
+      );
+    let navigate = useNavigate();
+    const dispatch = useDispatch();
+    
+    function goLogout(){
+        dispatch(addToken(''));
+        toast.info('Usuário deslogado', {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: false,
+            theme: "colored",
+            progress: undefined,
+        });
+        navigate('/login')
+    }
+
+    var navbarComponent;
+
+    if(token != ""){
+        navbarComponent = <AppBar position="static" className='fundo'>
+        <Toolbar variant="dense">
+            <Box className='cursor'>
+                <Typography variant="h5" color="inherit">
+                <img src={meui} className='imglogo'></img>
+                </Typography>
+            </Box>
+
+            <Box display="flex" justifyContent="start">
+                <Link to="/home" className="text-decorator-none">
+                    <Box mx={1} className='cursor'>
+                        <Typography variant="h6" color="inherit">
+                        <img src={HOME} className='HOME'></img>
                         </Typography>
                     </Box>
-
-                    <Box display="flex" justifyContent="start" className='margim HOME'>
-                        <Box mx={7} className='HOME'>
-                            <Link to='/' className='text-decorator-none'>
-                            <Typography variant="h5"  >
-                                <img src={HOME} className='HOME'></img>
-                            </Typography>
-                            </Link>
-
-                        </Box>
-                        <Box mx={7} className='cursor margim2' >
-                            <Link to='/sobrenos' className='text-decorator-none '>
-                            <Typography variant="h5"  >
-                                <img src={SOBRE_NOS} className='SOBRE_NOS'></img>
-                            </Typography>
-                            </Link>
-                        </Box>
-                        <Box mx={7} className='cursor margim2'>
-                            <Link to='/nossamissao' className='text-decorator-none '>
-                            <Typography variant="h5"  >
-                                <img src={NOSSA_MISSAO} className='NOSSA_MISSAO'></img>
-                            </Typography>
-                            </Link>
-                        </Box>
-
-                        <Box mx={1} className='cursor margim3'>
-                            <Link to='/login'>
-                            <Typography variant="h5"  >
-                                <img src={login} className='imglogin'></img>
-                            </Typography>
-                            </Link>
-                        </Box>
-                        
+                    
+                </Link>
+                <Link to="/sobrenos" className="text-decorator-none">
+                <Box mx={1} className='cursor' display="flex">
+                    <Typography variant="h6" >
+                    <img src={SOBRE_NOS} className='SOBRE_NOS'></img>
+                    </Typography>
+                </Box>
+                </Link>
+              
+                    <Box mx={1} className='cursor' onClick={goLogout}>
+                        <Typography variant="h6" color="inherit">
+                            LogOut
+                        </Typography>
                     </Box>
+                
+            </Box>
 
-                </Toolbar>
-            </AppBar>
+        </Toolbar>
+    </AppBar>
+    }
+    return (
+        <>
+            {navbarComponent}
         </>
     )
 }

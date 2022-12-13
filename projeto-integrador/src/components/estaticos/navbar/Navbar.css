@@ -1,6 +1,6 @@
 .cursor{
     cursor: pointer;
-    color: rgb(249, 247, 247)
+    color: #2d3ac9
 }
 
 .text-decorator-none{
@@ -8,7 +8,7 @@
 }
 
 .fundo{
-    background: hsl(180, 100%, 100%) !important;
+    background: rgb(255, 255, 255) !important;
     opacity: 2;
 }
 
@@ -20,7 +20,7 @@
     font-style: oblique;
 }
 .imglogo{
- width: 200px;
+ width: 100px;
  
 }
 .imglink{
@@ -28,8 +28,8 @@
     margin-left: 5px;
 }
 .SOBRE_NOS{
-width: 150px;
-height: 80px;
+width: 50x;
+height: 65px;
 }
 .proximo{
     margin-top: -10px;
@@ -55,6 +55,6 @@ height: 80px;
 }
 
 .HOME{
-width: 80px;
-height: 80px;
+width: 70px;
+height: 55px;
 }

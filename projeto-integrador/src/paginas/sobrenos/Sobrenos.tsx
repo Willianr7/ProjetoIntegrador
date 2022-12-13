@@ -15,7 +15,8 @@ function Sobrenos() {
       </Box>
   </Grid>
   <Grid item xs={6} >
-                  <img src="https://cdn.discordapp.com/attachments/1014550882538504273/1048231012536168468/erradicacao_da_PObreza2.jpg" alt="" width="632px" height="450px" />
+                    <img src="https://cdn.discordapp.com/attachments/1014550882538504273/1051850943689392128/aboutus.jpg" alt="" width="500px" height="500px" />
+                  <img src="" alt="" width="632px" height="450px" />
               </Grid>
                </Grid>
               </>
