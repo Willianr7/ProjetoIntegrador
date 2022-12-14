@@ -20,7 +20,7 @@ function TabPostagem() {
             <Tab label="Todas as postagens" value="1"/>
             <Link to='/sobrenos' className='text-decorator-none '>
           
-            <Tab label="Sobre-nós" value="2" />
+            <Tab label="Sobre-nÃ³s" value="2" />
             </Link>
             <Link to='/nossamissao' className='text-decorator-none '>
           
