@@ -12,6 +12,9 @@ import {toast} from 'react-toastify';
 import meui from '../../estaticos/image/meui.png';
 import HOME from '../../estaticos/image/HOME.png';
 import SOBRE_NOS from '../../estaticos/image/SOBRE_NOS.png';
+import logout from '../../estaticos/image/logout.png';
+import NOSSA_MISSAO from '../../estaticos/image/NOSSA_MISSAO.png';
+import imglogin from '../../estaticos/image/imgdelogin.png'
 
 function Navbar() {
     const token = useSelector<TokenState, TokenState["tokens"]>(
@@ -62,12 +65,29 @@ function Navbar() {
                     </Typography>
                 </Box>
                 </Link>
-              
-                    <Box mx={1} className='cursor' onClick={goLogout}>
+
+                    <Link to="/nossamissao" className="text-decorator-none">
+                <Box mx={1} className='cursor' display="flex">
+                    <Typography variant="h6" >
+                    <img src={NOSSA_MISSAO} className='NOSSA_MISSAO'></img>
+                    </Typography>
+                </Box>
+                </Link>
+
+                <Box mx={1} className='cursor' onClick={goLogout}>
                         <Typography variant="h6" color="inherit">
-                            LogOut
+                            <img src={logout} className='logout'></img>
                         </Typography>
                     </Box>
+
+                    <Link to="/login" className="text-decorator-none">
+                <Box mx={1} className='cursor' display="flex">
+                    <Typography variant="h6" >
+                    <img src={imglogin} className='imglogin'></img>
+                    </Typography>
+                </Box>
+                </Link>
+              
                 
             </Box>
 

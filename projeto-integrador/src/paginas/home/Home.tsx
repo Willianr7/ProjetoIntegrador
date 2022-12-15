@@ -46,12 +46,12 @@ function Home() {
                             <ModalPostagem />
                         </Box>
                         <Link to="/posts" className="text-decorator-none">
-                            <Button variant="outlined" className='botao'>Ver Postagens</Button>
+                            <Button variant="outlined" className='botao botton txt'>Ver Postagens</Button>
                         </Link>
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
-                    <img src="." alt="" width="500px" height="500px" />
+                    <img src="https://cdn.discordapp.com/attachments/1014550882538504273/1052933244213002300/Welcome.png" alt="" width="500px" height="500px" />
                 </Grid>
                 <Grid xs={12} className='postagens'>
                     <TabPostagem />

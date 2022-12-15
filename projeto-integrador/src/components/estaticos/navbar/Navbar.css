@@ -8,7 +8,7 @@
 }
 
 .fundo{
-    background: rgb(255, 255, 255) !important;
+    background: rgb(14, 12, 12) !important;
     opacity: 2;
 }
 
@@ -20,16 +20,12 @@
     font-style: oblique;
 }
 .imglogo{
- width: 100px;
+ width: 145px;
  
 }
 .imglink{
     width: 60px;
     margin-left: 5px;
-}
-.SOBRE_NOS{
-width: 50x;
-height: 65px;
 }
 .proximo{
     margin-top: -10px;
@@ -46,15 +42,26 @@ height: 65px;
     margin-top: 10px;
 }
 .imglogin{
-    width: 80px;
+    width: 115px;
 }
 
 .NOSSA_MISSAO{
-width: 150px;
-height: 80px;
+width: 70px;
+height: 65px;
 }
 
 .HOME{
-width: 70px;
-height: 55px;
+width: 90px;
+height: 90px;
 }
+
+.SOBRE_NOS{
+width: 65px;
+height: 63px;
+}
+
+.logout{
+    width: 65px;
+    height: 63px;
+}
+
