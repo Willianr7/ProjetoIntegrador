@@ -14,9 +14,20 @@
 }
 
 .postagens{
-    background-color: white;
+    background-image: url("/src/components/estaticos/image/matrix.webp") !important;
+    background-repeat:no-repeat ;
+  
+     background-size: cover ;
+     background-position:center;
 }
 
 .text-decorator-none{
     text-decoration: none;
+}
+
+.grid5{
+    background-color: rgb(25, 45, 24);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 100px;
 }

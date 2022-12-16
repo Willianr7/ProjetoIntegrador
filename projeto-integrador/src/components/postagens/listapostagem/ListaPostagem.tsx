@@ -55,7 +55,7 @@ function ListaPostagem() {
             <Card variant="outlined">
               <CardContent>
                 <Typography color="textSecondary" gutterBottom>
-                  Postagens
+                  <h3>Postagens</h3>
                 </Typography>
                 <Typography variant="h5" component="h2">
                   {post.titulo}
