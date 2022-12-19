@@ -58,6 +58,8 @@ function Navbar() {
                     </Box>
                     
                 </Link>
+    
+
                 <Link to="/sobrenos" className="text-decorator-none">
                 <Box mx={1} className='cursor' display="flex">
                     <Typography variant="h6" >
@@ -66,13 +68,14 @@ function Navbar() {
                 </Box>
                 </Link>
 
-                    <Link to="/nossamissao" className="text-decorator-none">
+                <Link to="/nossamissao" className="text-decorator-none">
                 <Box mx={1} className='cursor' display="flex">
                     <Typography variant="h6" >
                     <img src={NOSSA_MISSAO} className='NOSSA_MISSAO'></img>
                     </Typography>
                 </Box>
                 </Link>
+
 
                 <Box mx={1} className='cursor' onClick={goLogout}>
                         <Typography variant="h6" color="inherit">

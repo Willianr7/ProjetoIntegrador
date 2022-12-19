@@ -3,5 +3,9 @@
  }
  .text-decorator-none{
     text-decoration: none;
-    color: beige;
+    color: yellow;
+}
+
+.back{
+    color: black;
 }
