@@ -16,7 +16,7 @@ function TabPostagem() {
     <>
       <TabContext value={value}>
         <AppBar position="static">
-          <Tabs centered indicatorColor="primary" onChange={handleChange} className='text-decorator-none'>
+          <Tabs centered indicatorColor="primary" onChange={handleChange} className='text-decorator-none fundobackground'>
             <Tab label="Todas as postagens" value="1"/>
             <Link to='/sobrenos' className='text-decorator-none '>
           
