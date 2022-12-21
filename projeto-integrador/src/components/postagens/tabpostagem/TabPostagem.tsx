@@ -43,7 +43,7 @@ function TabPostagem() {
 
           </Tabs>
         </AppBar>
-        <TabPanel value="1" >
+        <TabPanel value="1">
           <Box display="flex" flexWrap="wrap" justifyContent="center">
             <ListaPostagem />
           </Box>

@@ -7,3 +7,17 @@
     color: rgb(5, 3, 3);
 }
 
+.cordotexto2{
+    color: white
+}
+
+.grid6{
+    background-color: rgb(43, 70, 41);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 100px;
+}
+
+.fundobackground{
+    background-color: black;
+}

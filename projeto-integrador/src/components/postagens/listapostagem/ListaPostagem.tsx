@@ -53,17 +53,17 @@ function ListaPostagem() {
         posts.map(post => (
           <Box m={2}>
             <Card variant="outlined">
-              <CardContent>
+              <CardContent className='fundobackground'>
                 <Typography color="textSecondary" gutterBottom>
-                  <h3>Postagens</h3>
+                  <h3 className='cordaletra'>Postagem </h3>
                 </Typography>
-                <Typography variant="h5" component="h2">
+                <Typography variant="h5" component="h2" className='cordaletra'>
                   {post.titulo}
                 </Typography>
-                <Typography variant="body2" component="p">
+                <Typography variant="body2" component="p" className='cordaletra'>
                   {post.texto}
                 </Typography>
-                <Typography variant="body2" component="p">
+                <Typography variant="body2" component="p" className='cordaletra'>
                   {post.tema?.descricao}
                 </Typography>
               </CardContent>

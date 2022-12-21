@@ -131,7 +131,7 @@ function CadastroPost() {
     }
 
     return (
-        <Container maxWidth="sm" className="topo">
+        <Container maxWidth="sm" className="topo grid6">
             <form onSubmit={onSubmit} className='cordotexto'>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" ><h5 className='cordotexto'>Cadastre a postagem</h5></Typography>
                 <TextField value={postagem.titulo} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="titulo" label="Digite o título da sua postagem" variant="outlined" name="titulo" margin="normal" fullWidth />

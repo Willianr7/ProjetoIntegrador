@@ -26,7 +26,7 @@ function Sobrenos() {
                </Grid>
               </>
   )
-  
 }
 
 export default Sobrenos;
+ 
