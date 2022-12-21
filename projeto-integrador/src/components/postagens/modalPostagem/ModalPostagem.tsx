@@ -58,11 +58,13 @@ function ModalPostagem () {
   );
 
   return (
+    
     <div>
-      <Button
+       <Button
         variant="outlined"
         className="btnModal botton txt"
         onClick={handleOpen}>Nova Postagem</Button>
+      
       <Modal
         open={open}
         onClose={handleClose}
@@ -71,6 +73,7 @@ function ModalPostagem () {
       >
         {body}
       </Modal>
+    
     </div>
   );
 }

@@ -40,7 +40,7 @@ function Home() {
                     <Box paddingX={20} >
                         <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo grid5'>Seja bem vindo ao site do Projeto MEUI</Typography>
                 
-                        <img src="https://cdn.discordapp.com/attachments/1047476710578331680/1054388073275867207/about-poor-removebg-preview.png" alt="" width="632px" height="200px"/>
+                        <img src="https://cdn.discordapp.com/attachments/1047476710578331680/1054388073275867207/about-poor-removebg-preview.png" alt="0" width="852px" height="200px"/>
 
                         <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo grid5'>Este é o site do nosso Projeto Integrador. Confira nossas postagens ou faça uma!</Typography>
                         <Typography variant="h6" gutterBottom color="textPrimary" component="h6" align="center" className='titulo grid5'> Erradicação da Pobreza:
