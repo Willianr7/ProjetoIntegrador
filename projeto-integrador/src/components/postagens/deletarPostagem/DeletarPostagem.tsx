@@ -74,12 +74,12 @@ function DeletarPostagem() {
     <>
       <Box m={2}>
         <Card variant="outlined" >
-          <CardContent>
+          <CardContent className='fundobackground'>
             <Box justifyContent="center">
-              <Typography color="textSecondary" gutterBottom className='cordotexto'>
+              <Typography color="error" gutterBottom className='cordotexto'>
                 Deseja deletar a Postagem:
               </Typography>
-              <Typography color="textSecondary" >
+              <Typography className='cordaletra' >
               {post?.titulo}
               </Typography>
             </Box>
