@@ -8,7 +8,7 @@
 }
 
 .fundo{
-    background: rgb(14, 12, 12) !important;
+    background: rgb(0, 0, 0) !important;
     opacity: 2;
 }
 
@@ -43,26 +43,26 @@
 }
 .imglogin{
     width: 60px;
-    height: 60px;
+    height: 55px;
 }
 
 .NOSSA_MISSAO{
 width: 60px;
-height: 60px;
+height: 55px;
 }
 
 .HOME{
 width: 60px;
-height: 60px;
+height: 55px;
 }
 
 .SOBRE_NOS{
 width: 60px;
-height: 60px;
+height: 55px;
 }
 
 .logout{
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
 }
 
